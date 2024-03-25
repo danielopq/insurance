@@ -53,8 +53,6 @@ nav{
 	align-items: center;
 	justify-content: space-between;
 	padding: 0px 165px;
-	
-	border:solid 1px red;
 }
 nav > div{
 	height: 40px;
@@ -81,6 +79,44 @@ a[class="nav-link"]{
 	color: black;
 	border-color: black;
 }
+/*################################### HEADER ###################################*/
+header{
+	width: 1440px;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	padding: 105px 0px 0px 165px;
+	background-color: hsl(256, 26%, 20%);
+	color: white;
+}
+#header-decoLine{
+	width: 150px;
+	height: 60px;
+	border-top: solid 1px white;
+}
+h1{
+	width: 540px;
+	font: 400 72px/0.9'DMSerifDisplay';
+	padding: 0px;
+	margin: 0px 0px 25px 0px;
+}
+
+#header-text{
+	width: 540px;
+	font: 400 16px/1.7 'Karla';
+	padding: 0px;
+	margin: 0px 0px 30px 0px;
+}
+
+#header-viewPlansBt{
+	width: 145px;
+	color: white;
+	border-color: white;
+}
+
+
+
+
 
 
 
