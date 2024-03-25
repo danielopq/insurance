@@ -132,7 +132,11 @@ main{
 #header-decoLine{
 	border-top-color: #b1a3b4;
 }
-
+#main-header{
+	width: 460px;
+	font: 400 68px/1 'DMSerifDisplay';
+	color: black;
+}
 
 #main-findOut{
 	height: 250px;
