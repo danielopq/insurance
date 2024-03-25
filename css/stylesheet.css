@@ -44,6 +44,11 @@ a:hover,input[type="button"]:hover{
 	background-color: hsla(0,0%,100%,0);
 	font: 700 14px 'Karla';
 }
+.decoLine{
+	width: 150px;
+	height: 60px;
+	border-top: solid 1px;
+}
 /*################################### NAV ###################################*/
 nav{
 	width: 1440px;
@@ -85,14 +90,13 @@ header{
 	height: 600px;
 	display: flex;
 	flex-direction: column;
-	padding: 105px 0px 0px 165px;
+	align-items: center;
+	padding: 105px 165px 0px 165px;
 	background-color: hsl(256, 26%, 20%);
 	color: white;
 }
 #header-decoLine{
-	width: 150px;
-	height: 60px;
-	border-top: solid 1px white;
+	border-top-color: white;
 }
 h1{
 	width: 540px;
@@ -113,6 +117,45 @@ h1{
 	color: white;
 	border-color: white;
 }
+/*################################### MAIN ###################################*/
+
+main{
+	width: 1440px;
+	height: 1340px;
+	display: flex;
+	flex-direction: column;
+	padding: 300px 165px 0px 165px;
+
+	border: solid 1px red;
+}
+
+#header-decoLine{
+	border-top-color: #b1a3b4;
+}
+
+
+#main-findOut{
+	height: 250px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 80px;
+	background: hsl(256, 26%, 20%) url("../images/bg-pattern-how-we-work-desktop.svg") right/434px no-repeat;
+	color: white;
+}
+#findOut-header{
+	width: 480px;
+	font: 400 55px/1 'DMSerifDisplay';
+}
+#findOut-howWeWorkBt{
+	width: 160px;
+	color: white;
+	border-color: white;
+}
+
+
 
 
 
