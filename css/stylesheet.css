@@ -118,7 +118,7 @@ header{
 	background: url("../images/bg-pattern-intro-left-desktop.svg") 0% 100%/195px no-repeat;
 }
 #overlapped-pic-right{
-	background: url("../images/bg-pattern-intro-right-desktop.svg") 100% 0%/436px no-repeat;
+	background: url("../images/bg-pattern-intro-right-desktop.svg") 100% 0%/436px 512px no-repeat;
 }
 /*------------------- HEADER CONTENT -------------------*/
 #header-decoLine{
