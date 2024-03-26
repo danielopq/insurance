@@ -78,15 +78,21 @@ nav > div{
 a[class="nav-link"]{
 	color:hsl(273, 4%, 51%);
 }
+a[class="nav-link"]:hover{
+	color:hsl(256, 26%, 20%);
+}
 a:visited[class="nav-link"]{
 	color:hsl(273, 4%, 51%);
 }
 #nav-viewPlansBt{
 	width: 145px;
-	color: black;
-	border-color: black;
+	color: hsl(256, 26%, 20%);
+	border-color: hsl(256, 26%, 20%);
 }
-/*################################### HEADER ###################################*/
+#nav-viewPlansBt:hover{
+	color: white;
+	background-color: hsl(256, 26%, 20%);
+}/*################################### HEADER ###################################*/
 header{
 	width: 1440px;
 	height: 600px;
@@ -143,6 +149,10 @@ h1{
 	color: white;
 	border-color: white;
 }
+#header-viewPlansBt:hover{
+	color: hsl(256, 26%, 20%);
+	background-color: white;
+}
 /*################################### MAIN ###################################*/
 
 main{
@@ -175,7 +185,7 @@ main{
 	text-align: left;
 	padding-right: 15px;
 }
-#main-features div[class="features-pic"]{
+.features-pic{
 	width: inherit;
 	height: 86px;
 	background-position: left;
@@ -223,7 +233,10 @@ main{
 	color: white;
 	border-color: white;
 }
-
+#findOut-howWeWorkBt:hover{
+	color: hsl(256, 26%, 20%);
+	background-color: white;
+}
 /*################################### FOOTER ###################################*/
 
 footer{
@@ -253,7 +266,7 @@ footer{
 	flex-direction: row;
 	align-items: center;
 }
-#footer-media > div{
+#footer-media div{
 	width: 24px;
 	height: 24px;
 	margin-left: 15px;
@@ -262,15 +275,26 @@ footer{
 #facebook{
 	background: url("../images/icon-facebook.svg") center/24px no-repeat;
 }
-
+#facebook:hover{
+	background-image: url("../images/icon-facebook-hover.svg");
+}
 #twitter{
 	background: url("../images/icon-twitter.svg") center/24px no-repeat;
+}
+#twitter:hover{
+	background-image: url("../images/icon-twitter-hover.svg");
 }
 #pinterest{
 	background: url("../images/icon-pinterest.svg") center/24px no-repeat; 
 }
+#pinterest:hover{
+	background-image: url("../images/icon-pinterest-hover.svg"); 
+}
 #instagram{
 	background: url("../images/icon-instagram.svg") center/24px no-repeat; 
+}
+#instagram:hover{
+	background-image: url("../images/icon-instagram-hover.svg");
 }
 /*------------------- FOOTER LINKS -------------------*/
 
@@ -308,6 +332,9 @@ footer{
 }
 #footer-links a{
 	color: hsl(256, 26%, 20%);
+}
+#footer-links a:hover{
+	text-decoration: underline;
 }
 #footer-links a:visited{
 	color: hsl(256, 26%, 20%);
