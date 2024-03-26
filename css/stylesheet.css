@@ -125,8 +125,6 @@ main{
 	display: flex;
 	flex-direction: column;
 	padding: 300px 165px 0px 165px;
-
-	border: solid 1px red;
 }
 
 #header-decoLine{
@@ -135,9 +133,48 @@ main{
 #main-header{
 	width: 460px;
 	font: 400 68px/1 'DMSerifDisplay';
-	color: black;
+	color: hsl(270, 9%, 17%)
 }
-
+/*------------------- FEATURES -------------------*/
+#main-features{
+	height: 260px;
+	width: 1110px;
+	display:flex;
+	flex-direction: row;
+}
+#main-features > div{
+	width: 370px;
+	height: inherit;
+	text-align: left;
+	padding-right: 15px;
+}
+#main-features div[class="features-pic"]{
+	width: inherit;
+	height: 86px;
+	background-position: left;
+	background-size: 86px;
+	background-repeat: no-repeat;
+}
+#snappyProcess-pic{
+	background-image: url("../images/icon-snappy-process.svg");
+}
+#affordablePrices-pic{
+	background-image: url("../images/icon-affordable-prices.svg");
+}
+#peopleFirst-pic{
+	background-image: url("../images/icon-people-first.svg");
+}
+#main-features h3{
+	font: 400 27px/1 'DMSerifDisplay';
+	color: hsl(270, 9%, 17%);
+	margin: 35px 0px 25px 0px;
+}
+#main-features p{
+	color: #b1a3b4;
+	font: 400 16px/1.6 'Karla';
+	margin:0px;
+}
+/*------------------- FIND OUT -------------------*/
 #main-findOut{
 	height: 250px;
 	width: 100%;
@@ -146,6 +183,7 @@ main{
 	align-items: center;
 	justify-content: space-between;
 	padding: 0px 80px;
+	margin-top: 150px;
 	background: hsl(256, 26%, 20%) url("../images/bg-pattern-how-we-work-desktop.svg") right/434px no-repeat;
 	color: white;
 }
