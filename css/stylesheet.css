@@ -101,7 +101,6 @@ header{
 	width: 1440px;
 	height: 930px;
 	background: linear-gradient(to bottom, hsl(256, 26%, 20%) 600px, white 600px);
-	border:solid 1px red;
 }
 
 #header-intro{
@@ -159,15 +158,16 @@ h1{
 
 main{
 	width: 1440px;
-	height: 1340px;
+	height: 1000px;
 	display: flex;
 	flex-direction: column;
-	padding: 300px 165px 0px 165px;
+	padding: 35px 165px 0px 165px;
 }
 #main-header{
 	width: 460px;
 	font: 400 68px/1 'DMSerifDisplay';
-	color: hsl(270, 9%, 17%)
+	color: hsl(270, 9%, 17%);
+	margin-top: 0px;
 }
 
 /*------------------- FEATURES -------------------*/
