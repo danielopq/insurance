@@ -356,6 +356,51 @@ nav > div{
 #nav-hamburger{
 	display: block;
 }
+/*------------------- HEADER -------------------*/
+header{
+	width: 100vw;
+	height: 1125px;
+	background: linear-gradient(to bottom, hsl(256, 26%, 20%) 950px, white 950px);
+}
+
+#header-intro{
+	padding: 550px 30px 0px 30px;
+	background-image: url("../images/bg-pattern-intro-left-mobile.svg"),url("../images/bg-pattern-intro-right-mobile.svg"), url("../images/image-intro-mobile.jpg");
+	background-repeat: no-repeat;
+	background-position: 0% 451px,100% 100%,top;
+	background-size: 168px,124px,375px;
+	align-items: center;
+	text-align: center;
+}
+
+#intro-topLine{
+	display: none;
+}
+h1{
+	width: 350px;
+	font-size: 48px;
+	line-height: 1;
+	margin: 0px;
+}
+#intro-text{
+	width: 340px;
+	font-size: 17px;
+	margin: 15px 0px 10px 0px;
+}
+#intro-viewPlansBt{
+	width: 145px;
+	color: white;
+	border-color: white;
+}
+#intro-viewPlansBt:hover{
+	color: hsl(256, 26%, 20%);
+	background-color: white;
+}
+
+#intro-bottomLine{
+	border-top-color: #b1a3b4;
+	margin-top: 230px;
+}
 }
 
 
