@@ -43,11 +43,7 @@ a:hover,input[type="button"]:hover{
 	background-color: hsla(0,0%,100%,0);
 	font: 700 14px 'Karla';
 }
-.decoLine{
-	width: 150px;
-	height: 60px;
-	border-top: solid 1px;
-}
+
 /*################################### NAV ###################################*/
 nav{
 	width: 1440px;
@@ -103,37 +99,34 @@ a:visited[class="nav-link"]{
 /*################################### HEADER ###################################*/
 header{
 	width: 1440px;
-	height: 600px;
-	background-color: hsl(256, 26%, 20%);
+	height: 930px;
+	background: linear-gradient(to bottom, hsl(256, 26%, 20%) 600px, white 600px);
+	border:solid 1px red;
 }
-/*------------------- INTRO -------------------*/
+
 #header-intro{
 	width: inherit;
-	height: 930px;
-	position:absolute;
-	display: flex;
-	flex-direction: row;
-	z-index: 1;
-	color: white;
-	background: url("../images/image-intro-desktop.jpg") 735px 105px/540px no-repeat;
-}
-#header-intro > div{
-	width: 50%;
 	height: inherit;
-}
-#intro-left{
+	position:absolute;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	padding: 105px 0px 0px 165px;
-	background: url("../images/bg-pattern-intro-left-desktop.svg") 0% 100%/195px no-repeat;
+	z-index: 1;
+	padding: 105px 165px 0px 165px;
+	color: white;
+	background-image: url("../images/bg-pattern-intro-left-desktop.svg"),url("../images/bg-pattern-intro-right-desktop.svg"), url("../images/image-intro-desktop.jpg");
+	background-repeat: no-repeat;
+	background-position: 0% 100%,100% 0%,735px 105px;
+	background-size: 195px,436px 512px,540px;
 }
-#intro-decoLine{
+
+#intro-topLine{
 	border-top-color: white;
+	margin-bottom: 50px;
 }
 h1{
 	width: 540px;
-	font: 400 72px/0.9'DMSerifDisplay';
+	font: 400 72px/0.9 'DMSerifDisplay';
 	padding: 0px;
 	margin: 0px 0px 25px 0px;
 }
@@ -152,10 +145,16 @@ h1{
 	color: hsl(256, 26%, 20%);
 	background-color: white;
 }
-#intro-right{
-	background: url("../images/bg-pattern-intro-right-desktop.svg") 100% 0%/436px 512px no-repeat;
-}
 
+#intro-bottomLine{
+	border-top-color: #b1a3b4;
+	margin-top: 430px;
+}
+.decoLine{
+	width: 150px;
+	height: 10px;
+	border-top: solid 1px;
+}
 /*################################### MAIN ###################################*/
 
 main{
@@ -164,10 +163,6 @@ main{
 	display: flex;
 	flex-direction: column;
 	padding: 300px 165px 0px 165px;
-}
-
-#intro-decoLine{
-	border-top-color: #b1a3b4;
 }
 #main-header{
 	width: 460px;
