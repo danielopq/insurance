@@ -437,30 +437,18 @@ main{
 #main-findOut{
 	height: 340px;
 	width: 330px;
-	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
-	padding: 0px 80px;
-	margin-top: 150px;
-	background: hsl(256, 26%, 20%) url("../images/bg-pattern-how-we-work-desktop.svg") right/434px no-repeat;
-	color: white;
+	justify-content:flex-start;
+	padding: 72px 0px 0px 0px;
+	margin-top: 75px;
+	background: hsl(256, 26%, 20%) url("../images/bg-pattern-how-we-work-mobile.svg") 100% 0%/176px no-repeat;
 }
 #findOut-header{
-	width: 480px;
-	font: 400 55px/1 'DMSerifDisplay';
-	border: solid 1px red;
-}
-#findOut-howWeWorkBt{
-	width: 160px;
-	color: white;
-	border-color: white;
-}
-#findOut-howWeWorkBt:hover{
-	color: hsl(256, 26%, 20%);
-	background-color: white;
-}
-	
+	width: 240px;
+	margin: 0px 0px 40px 0px;
+	font-size: 38px;
+}	
 }
 
 
