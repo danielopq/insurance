@@ -28,7 +28,6 @@ body{
 	display:flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
 	margin:0px;
 	padding: 0px;
 }
@@ -92,7 +91,16 @@ a:visited[class="nav-link"]{
 #nav-viewPlansBt:hover{
 	color: white;
 	background-color: hsl(256, 26%, 20%);
-}/*################################### HEADER ###################################*/
+}
+#nav-hamburger{
+	display: none;
+	width: 30px;
+	background: url("../images/icon-hamburger.svg") center/32px no-repeat;
+}
+#nav-hamburger:hover{
+	cursor:pointer;
+}
+/*################################### HEADER ###################################*/
 header{
 	width: 1440px;
 	height: 600px;
@@ -334,7 +342,26 @@ footer{
 #footer-links a:visited{
 	color: hsl(256, 26%, 20%);
 }
+/*############################################################################*/
+/*############################## MOBILE VERSION ##############################*/
+/*############################################################################*/
+@media screen and (max-width:480px) {
+	/*------------------- NAV -------------------*/
+nav{
+	width: 100vw;
+	padding: 0px 25px;
+}
+nav > div{
+	height: 30px;
+}
 
+#nav-links{
+	display: none;
+}
+#nav-hamburger{
+	display: block;
+}
+}
 
 
 
