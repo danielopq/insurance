@@ -401,6 +401,65 @@ h1{
 	border-top-color: #b1a3b4;
 	margin-top: 230px;
 }
+/*------------------- MAIN -------------------*/
+
+main{
+	width: 100vw;
+	height: 1620px;
+	padding: 0px 25px;
+	align-items: center;
+	text-align: center;
+}
+#main-header{
+	width: 350px;
+	font-size: 50px;
+}
+
+/*------------------- FEATURES -------------------*/
+#main-features{
+	height: 1005px;
+	width: 100vw;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+#main-features > div{
+	width: 350px;
+	height: 255px;
+	text-align: center;
+	padding: 0px;
+}
+.features-pic{
+	background-position: center;
+}
+
+/*------------------- FIND OUT -------------------*/
+#main-findOut{
+	height: 34px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 80px;
+	margin-top: 150px;
+	background: hsl(256, 26%, 20%) url("../images/bg-pattern-how-we-work-desktop.svg") right/434px no-repeat;
+	color: white;
+}
+#findOut-header{
+	width: 480px;
+	font: 400 55px/1 'DMSerifDisplay';
+}
+#findOut-howWeWorkBt{
+	width: 160px;
+	color: white;
+	border-color: white;
+}
+#findOut-howWeWorkBt:hover{
+	color: hsl(256, 26%, 20%);
+	background-color: white;
+}
+	
 }
 
 
