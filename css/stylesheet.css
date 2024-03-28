@@ -341,7 +341,7 @@ footer{
 /*############################## MOBILE VERSION ##############################*/
 /*############################################################################*/
 @media screen and (max-width:480px) {
-	/*------------------- NAV -------------------*/
+	/*#################### NAV ####################*/
 nav{
 	width: 100vw;
 	padding: 0px 25px;
@@ -356,7 +356,7 @@ nav > div{
 #nav-hamburger{
 	display: block;
 }
-/*------------------- HEADER -------------------*/
+/*#################### HEADER ####################*/
 header{
 	width: 100vw;
 	height: 1125px;
@@ -401,7 +401,7 @@ h1{
 	border-top-color: #b1a3b4;
 	margin-top: 230px;
 }
-/*------------------- MAIN -------------------*/
+/*#################### MAIN ####################*/
 
 main{
 	width: 100vw;
@@ -448,7 +448,55 @@ main{
 	width: 240px;
 	margin: 0px 0px 40px 0px;
 	font-size: 38px;
-}	
+}
+/*#################### FOOTER ####################*/
+
+footer{
+	width:100vw;
+	height:1025px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding:0px 20px;
+	background: hsl(0, 0%, 98%) url("../images/bg-pattern-footer-mobile.svg") top/374px no-repeat;
+}
+/*------------------- FOOTER TOP -------------------*/
+#footer-top{
+	width: 330px;
+	height: 200px;
+	flex-direction: column;
+	align-items: center;
+	padding: 85px 0px 40px 0px;
+}
+#footer-logo{
+	height: 18px;
+}
+#footer-media{
+	height: 24px;
+}
+#footer-media div{
+	margin: 0px 10px;
+}
+/*------------------- FOOTER LINKS -------------------*/
+
+#footer-links{
+	width: 100%;
+	height: 800px;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 40px;
+}
+#footer-links > div{
+	height: auto;
+	width: 330px;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 15px;
+}
+	.section-link{
+		height: 30px;
+	}
 }
 
 
