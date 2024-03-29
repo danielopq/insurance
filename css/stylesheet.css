@@ -204,7 +204,7 @@ main {
 	width: 1110px;
 	display: flex;
 	flex-direction: row;
-	margin-top: 95px;
+	margin-top: 35px;
 }
 #main-features > div {
 	width: 370px;
