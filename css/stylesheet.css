@@ -148,7 +148,7 @@ header {
 	background-image: url("../images/bg-pattern-intro-left-desktop.svg"), url("../images/bg-pattern-intro-right-desktop.svg"), url("../images/image-intro-desktop.jpg");
 	background-repeat: no-repeat;
 	background-position: 0% 100%, 100% 0%, 735px 105px;
-	background-size: 195px, 436px 512px, 540px;
+	background-size: 195px, 436px, 540px;
 }
 #intro-topLine {
 	border-top-color: white;
@@ -204,6 +204,7 @@ main {
 	width: 1110px;
 	display: flex;
 	flex-direction: row;
+	margin-top: 95px;
 }
 #main-features > div {
 	width: 370px;
@@ -267,7 +268,7 @@ main {
 footer {
 	width: 1440px;
 	height: 390px;
-	padding: 30px 165px 0px 165px;
+	padding: 37px 165px 0px 165px;
 	background: hsl(0, 0%, 98%) url("../images/bg-pattern-footer-desktop.svg") 0% 0%/528px no-repeat;
 }
 /*------------------- FOOTER TOP -------------------*/
@@ -424,7 +425,7 @@ footer {
 	/*#################### MAIN ####################*/
 	main {
 		width: 100vw;
-		height: 1620px;
+		height: 1690px;
 		padding: 0px 25px;
 		align-items: center;
 		text-align: center;
@@ -440,6 +441,7 @@ footer {
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-around;
+		margin-top: 60px;
 	}
 	#main-features > div {
 		width: 325px;
