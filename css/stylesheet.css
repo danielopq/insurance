@@ -103,7 +103,7 @@ a:visited[class="nav-link"] {
 	top: 80px;
 	left: 50%;
 	transform: translate(-50%, 0%);
-	background: hsl(256, 26%, 20%);
+	background: hsl(256, 26%, 20%) url("../images/bg-pattern-mobile-nav.svg") bottom/100vw no-repeat;
 	font: 400 23px 'Karla';
 	color: white;
 	text-align: center;
