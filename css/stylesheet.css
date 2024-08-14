@@ -38,9 +38,9 @@ a:hover, input[type="button"]:hover {
 }
 .square-button {
 	height: 40px;
-	border: solid 1px;
+	border: solid 1.5px;
 	background-color: hsla(0, 0%, 100%, 0);
-	font: bold 14px 'Karla';
+	font: bold 13px 'Karla';
 	letter-spacing: 1.5px;
 }
 /*################################### NAV ###################################*/
