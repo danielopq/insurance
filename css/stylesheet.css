@@ -201,7 +201,7 @@ main {
 	height: 1000px;
 	display: flex;
 	flex-direction: column;
-	padding: 89px 165px 0px 165px;
+	padding: 50px 165px 0px 165px;
 }
 #main-header {
 	width: 717px;
@@ -261,13 +261,14 @@ main {
 	align-items: center;
 	justify-content: space-between;
 	padding: 0px 80px;
-	margin-top: 150px;
+	margin-top: 158px;
 	background: hsl(256, 26%, 20%) url("../images/bg-pattern-how-we-work-desktop.svg") right/434px no-repeat;
 	color: white;
 }
 #findOut-header {
-	width: 480px;
-	font: 400 55px/1 'DMSerifDisplay';
+	width: 475px;
+	font: 400 56px/56px 'DMSerifDisplay';
+	letter-spacing: -0.78px;
 }
 #findOut-howWeWorkBt {
 	width: 160px;
