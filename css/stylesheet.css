@@ -238,7 +238,7 @@ main {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	padding: 32px 165px 0px 165px;
+	padding: 30px 165px 0px 165px;
 }
 
 #main-header {
@@ -288,7 +288,7 @@ main {
 #main-features h3 {
 	font: 400 28px/28px 'DMSerifDisplay';
 	color: hsl(270, 9%, 17%);
-	margin: 35px 0px 25px 0px;
+	margin: 35px 0px 16px 0px;
 	padding: 0px;
 }
 
@@ -315,6 +315,7 @@ main {
 
 #findOut-header {
 	width: 475px;
+	height: 112px;
 	font: 400 56px/56px 'DMSerifDisplay';
 	letter-spacing: -0.78px;
 }
