@@ -38,7 +38,7 @@ a:hover, input[type="button"]:hover {
 }
 .square-button {
 	height: 40px;
-	border: solid 2px;
+	border: solid 1px;
 	background-color: hsla(0, 0%, 100%, 0);
 	font: bold 13px 'Karla';
 	letter-spacing: 1.5px;
@@ -141,9 +141,7 @@ a:visited[class="nav-link-mb"] {
 header {
 	width: 1440px;
 	height: 940px;
-	background: linear-gradient(to bottom, hsl(256, 26%, 20%) 600px, white 600px);
-	border: solid 1px red;
-	
+	background: linear-gradient(to bottom, hsl(256, 26%, 20%) 600px, white 600px);	
 }
 #header-intro {
 	width: inherit;
@@ -153,7 +151,7 @@ header {
 	flex-direction: column;
 	align-items: flex-start;
 	z-index: 1;
-	padding: 105px 165px 0px 163px;
+	padding: 105px 165px 0px 165px;
 	color: white;
 	background-image: url("../images/bg-pattern-intro-left-desktop.svg"), url("../images/bg-pattern-intro-right-desktop.svg"), url("../images/image-intro-desktop.jpg");
 	background-repeat: no-repeat;
@@ -203,8 +201,7 @@ main {
 	height: 1000px;
 	display: flex;
 	flex-direction: column;
-	padding: 35px 165px 0px 165px;
-	border: solid 1px red;
+	padding: 89px 165px 0px 165px;
 }
 #main-header {
 	width: 717px;
@@ -223,7 +220,7 @@ main {
 	margin-top: 35px;
 }
 #main-features > div {
-	width: 370px;
+	width: 350px;
 	height: inherit;
 	text-align: left;
 	padding-right: 15px;
@@ -245,14 +242,16 @@ main {
 	background-image: url("../images/icon-people-first.svg");
 }
 #main-features h3 {
-	font: 400 27px/1 'DMSerifDisplay';
+	font: 400 28px/28px 'DMSerifDisplay';
 	color: hsl(270, 9%, 17%);
 	margin: 35px 0px 25px 0px;
+	padding:0px;
 }
 #main-features p {
 	color: #b1a3b4;
 	font: 400 16px/1.6 'Karla';
 	margin: 0px;
+	padding:0px;
 }
 /*------------------- FIND OUT -------------------*/
 #main-findOut {
