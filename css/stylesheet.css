@@ -209,21 +209,20 @@ main {
 	font: 400 72px/64px 'DMSerifDisplay';
 	letter-spacing: -1px;
 	color: hsl(270, 9%, 17%);
-	margin-top: 0px;
 }
 /*------------------- FEATURES -------------------*/
 #main-features {
-	height: 260px;
+	height: 250px;
 	width: 1110px;
 	display: flex;
 	flex-direction: row;
-	margin-top: 35px;
+	justify-content: space-between;
+	margin-top: 96px;
 }
 #main-features > div {
 	width: 350px;
 	height: inherit;
 	text-align: left;
-	padding-right: 15px;
 }
 .features-pic {
 	width: inherit;
@@ -249,7 +248,7 @@ main {
 }
 #main-features p {
 	color: #b1a3b4;
-	font: 400 16px/1.6 'Karla';
+	font: 400 16px/26px 'Karla';
 	margin: 0px;
 	padding:0px;
 }
