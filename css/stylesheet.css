@@ -38,7 +38,7 @@ a:hover, input[type="button"]:hover {
 }
 .square-button {
 	height: 40px;
-	border: solid 1.5px;
+	border: solid 2px;
 	background-color: hsla(0, 0%, 100%, 0);
 	font: bold 13px 'Karla';
 	letter-spacing: 1.5px;
@@ -140,8 +140,9 @@ a:visited[class="nav-link-mb"] {
 /*################################### HEADER ###################################*/
 header {
 	width: 1440px;
-	height: 930px;
+	height: 940px;
 	background: linear-gradient(to bottom, hsl(256, 26%, 20%) 600px, white 600px);
+	border: solid 1px red;
 	
 }
 #header-intro {
@@ -152,11 +153,11 @@ header {
 	flex-direction: column;
 	align-items: flex-start;
 	z-index: 1;
-	padding: 105px 165px 0px 165px;
+	padding: 105px 165px 0px 163px;
 	color: white;
 	background-image: url("../images/bg-pattern-intro-left-desktop.svg"), url("../images/bg-pattern-intro-right-desktop.svg"), url("../images/image-intro-desktop.jpg");
 	background-repeat: no-repeat;
-	background-position: 0% 100%, 100% -80px, 735px 105px;
+	background-position: 0% 435px, 100% -80px, 735px 105px;
 	background-size: 195px, 436px, 540px;
 }
 #intro-topLine {
@@ -189,7 +190,7 @@ h1 {
 }
 #intro-bottomLine {
 	border-top-color: #b1a3b4;
-	margin-top: 430px;
+	margin-top: 432px;
 }
 .decoLine {
 	width: 150px;
@@ -203,10 +204,13 @@ main {
 	display: flex;
 	flex-direction: column;
 	padding: 35px 165px 0px 165px;
+	border: solid 1px red;
 }
 #main-header {
-	width: 460px;
-	font: 400 68px/1 'DMSerifDisplay';
+	width: 717px;
+	height: 64px;
+	font: 400 72px/64px 'DMSerifDisplay';
+	letter-spacing: -1px;
 	color: hsl(270, 9%, 17%);
 	margin-top: 0px;
 }
