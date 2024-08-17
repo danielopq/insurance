@@ -300,13 +300,13 @@ footer {
 #footer-logo {
 	height: inherit;
 	width: 112px;
-	background: url("../images/logo.svg") center/112px no-repeat;
+	background: url("../images/logo.svg") top/112px no-repeat;
 }
 #footer-media {
 	height: inherit;
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: flex-start;
 }
 #footer-media div {
 	width: 24px;
@@ -340,13 +340,14 @@ footer {
 /*------------------- FOOTER LINKS -------------------*/
 #footer-links {
 	width: 100%;
-	height: 170px;
+	height: 159px;
 	display: flex;
 	flex-direction: row;
-	margin-top: 40px;
+	margin-top: 48px;
 }
 #footer-links > div {
-	height: 30px;
+	height: 159px;
+	width: 255px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -354,22 +355,18 @@ footer {
 	font: 700 13px/13px 'Karla';
 	letter-spacing: 1.5px;
 }
-#footer-links div[class="section-header"] {
+.section-header {
 	margin-bottom: 20px;
 	color: hsl(273, 4%, 51%);
 }
-#section-ourCompany {
-	width: 285px;
+
+.section-link {
+	width: inherit;
+	height: 15px;
+	margin-top: 16px;
 }
-#section-helpMe {
-	width: 285px;
-}
-#section-contact {
-	width: 285px;
-}
-#section-others {
-	width: 255px;
-}
+
+
 #footer-links a {
 	color: hsl(256, 26%, 20%);
 }
