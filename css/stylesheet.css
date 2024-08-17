@@ -1,26 +1,31 @@
 @charset "utf-8";
+
 @font-face {
 	font-family: 'DMSerifDisplay';
 	src: url("../fonts/DMSerifDisplay-Regular.woff")format('woff');
 	font-style: normal;
 	font-weight: 400;
 }
+
 @font-face {
 	font-family: 'Karla';
 	src: url("../fonts/Karla-Regular.woff");
 	font-style: normal;
 	font-weight: 400;
 }
+
 @font-face {
 	font-family: 'Karla';
 	src: url("../fonts/Karla-Bold.woff");
 	font-style: bold;
 	font-weight: 700;
 }
+
 /*################################### GENERAL ###################################*/
 * {
 	box-sizing: border-box;
 }
+
 body {
 	width: 100vw;
 	height: 100%;
@@ -30,12 +35,16 @@ body {
 	margin: 0px;
 	padding: 0px;
 }
+
 a {
 	text-decoration: none;
 }
-a:hover, input[type="button"]:hover {
+
+a:hover,
+input[type="button"]:hover {
 	cursor: pointer;
 }
+
 .square-button {
 	height: 40px;
 	border: solid 1px;
@@ -43,6 +52,7 @@ a:hover, input[type="button"]:hover {
 	font: bold 13px 'Karla';
 	letter-spacing: 1.5px;
 }
+
 /*################################### NAV ###################################*/
 nav {
 	width: 1440px;
@@ -53,13 +63,16 @@ nav {
 	justify-content: space-between;
 	padding: 0px 168px;
 }
-nav > div {
+
+nav>div {
 	height: 40px;
 }
+
 #nav-logo {
 	width: 112px;
 	background: url("../images/logo.svg") center/112px no-repeat;
 }
+
 #nav-links {
 	width: 560px;
 	height: 40px;
@@ -70,18 +83,23 @@ nav > div {
 	font: 700 13px/13px 'Karla';
 	letter-spacing: 1.5px;
 }
-#nav-links a{
+
+#nav-links a {
 	margin-left: 26px;
 }
+
 a[class="nav-link"] {
 	color: hsl(273, 4%, 51%);
 }
+
 a[class="nav-link"]:hover {
 	color: hsl(256, 26%, 20%);
 }
+
 a:visited[class="nav-link"] {
 	color: hsl(273, 4%, 51%);
 }
+
 #nav-viewPlansBt {
 	width: 146px;
 	height: 40px;
@@ -89,18 +107,22 @@ a:visited[class="nav-link"] {
 	border-color: hsl(256, 26%, 20%);
 	margin-left: 33px;
 }
+
 #nav-viewPlansBt:hover {
 	color: white;
 	background-color: hsl(256, 26%, 20%);
 }
+
 #nav-hamburger {
 	display: none;
 	width: 30px;
 	background: url("../images/icon-hamburger.svg") center/32px no-repeat;
 }
+
 #nav-hamburger:hover {
 	cursor: pointer;
 }
+
 #nav-mobile {
 	width: 100vw;
 	height: calc(100vh - 80px);
@@ -116,16 +138,20 @@ a:visited[class="nav-link"] {
 	color: white;
 	text-align: center;
 }
+
 a[class="nav-link-mb"] {
 	margin-top: 50px;
 	color: white;
 }
+
 a[class="nav-link-mb"]:hover {
-	color: hsla(0,100%,100%,0.5);
+	color: hsla(0, 100%, 100%, 0.5);
 }
+
 a:visited[class="nav-link-mb"] {
 	color: white;
 }
+
 #nav-viewPlansBt-mb {
 	width: 325px;
 	margin-top: 35px;
@@ -133,16 +159,19 @@ a:visited[class="nav-link-mb"] {
 	font: 400 23px 'Karla';
 	border-color: white;
 }
+
 #nav-viewPlansBt-mb:hover {
 	color: hsl(256, 26%, 20%);
 	background-color: white;
 }
+
 /*################################### HEADER ###################################*/
 header {
 	width: 1440px;
 	height: 940px;
-	background: linear-gradient(to bottom, hsl(256, 26%, 20%) 600px, white 600px);	
+	background: linear-gradient(to bottom, hsl(256, 26%, 20%) 600px, white 600px);
 }
+
 #header-intro {
 	width: inherit;
 	height: inherit;
@@ -158,10 +187,12 @@ header {
 	background-position: 0% 435px, 100% -80px, 735px 105px;
 	background-size: 195px, 436px, 540px;
 }
+
 #intro-topLine {
 	border-top-color: white;
 	margin-bottom: 53px;
 }
+
 h1 {
 	width: 540px;
 	height: 140px;
@@ -170,6 +201,7 @@ h1 {
 	padding: 0px 10px 0px 0px;
 	margin: 0px 0px 16px 0px;
 }
+
 #intro-text {
 	width: 540px;
 	height: 84px;
@@ -177,32 +209,38 @@ h1 {
 	padding: 0px;
 	margin: 0px 0px 24px 0px;
 }
+
 #intro-viewPlansBt {
 	width: 145px;
 	color: white;
 	border-color: white;
 }
+
 #intro-viewPlansBt:hover {
 	color: hsl(256, 26%, 20%);
 	background-color: white;
 }
+
 #intro-bottomLine {
 	border-top-color: #b1a3b4;
 	margin-top: 432px;
 }
+
 .decoLine {
 	width: 150px;
 	height: 10px;
 	border-top: solid 1px;
 }
+
 /*################################### MAIN ###################################*/
 main {
 	width: 1440px;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	padding: 37px 165px 0px 165px;
+	padding: 32px 165px 0px 165px;
 }
+
 #main-header {
 	width: 717px;
 	height: 64px;
@@ -210,6 +248,7 @@ main {
 	letter-spacing: -1px;
 	color: hsl(270, 9%, 17%);
 }
+
 /*------------------- FEATURES -------------------*/
 #main-features {
 	height: 250px;
@@ -219,11 +258,13 @@ main {
 	justify-content: space-between;
 	margin-top: 96px;
 }
-#main-features > div {
+
+#main-features>div {
 	width: 350px;
 	height: inherit;
 	text-align: left;
 }
+
 .features-pic {
 	width: inherit;
 	height: 86px;
@@ -231,27 +272,33 @@ main {
 	background-size: 86px;
 	background-repeat: no-repeat;
 }
+
 #snappyProcess-pic {
 	background-image: url("../images/icon-snappy-process.svg");
 }
+
 #affordablePrices-pic {
 	background-image: url("../images/icon-affordable-prices.svg");
 }
+
 #peopleFirst-pic {
 	background-image: url("../images/icon-people-first.svg");
 }
+
 #main-features h3 {
 	font: 400 28px/28px 'DMSerifDisplay';
 	color: hsl(270, 9%, 17%);
 	margin: 35px 0px 25px 0px;
-	padding:0px;
+	padding: 0px;
 }
+
 #main-features p {
 	color: #b1a3b4;
 	font: 400 16px/26px 'Karla';
 	margin: 0px;
-	padding:0px;
+	padding: 0px;
 }
+
 /*------------------- FIND OUT -------------------*/
 #main-findOut {
 	height: 250px;
@@ -265,20 +312,24 @@ main {
 	background: hsl(256, 26%, 20%) url("../images/bg-pattern-how-we-work-desktop.svg") right/434px no-repeat;
 	color: white;
 }
+
 #findOut-header {
-	width: 500px;
+	width: 475px;
 	font: 400 56px/56px 'DMSerifDisplay';
 	letter-spacing: -0.78px;
 }
+
 #findOut-howWeWorkBt {
 	width: 160px;
 	color: white;
 	border-color: white;
 }
+
 #findOut-howWeWorkBt:hover {
 	color: hsl(256, 26%, 20%);
 	background-color: white;
 }
+
 /*################################### FOOTER ###################################*/
 footer {
 	width: 1440px;
@@ -287,6 +338,7 @@ footer {
 	padding: 64px 165px 0px 165px;
 	background: hsl(0, 0%, 98%) url("../images/bg-pattern-footer-desktop.svg") 0% 0%/528px no-repeat;
 }
+
 /*------------------- FOOTER TOP -------------------*/
 #footer-top {
 	width: 100%;
@@ -297,55 +349,69 @@ footer {
 	justify-content: space-between;
 	border-bottom: solid 1px #d9d9d9;
 }
+
 #footer-logo {
 	height: inherit;
 	width: 112px;
 	background: url("../images/logo.svg") top/112px no-repeat;
 }
+
 #footer-media {
 	height: inherit;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
 }
+
 #footer-media div {
 	width: 24px;
 	height: 24px;
 	margin-left: 15px;
 }
+
 #facebook {
 	background: url("../images/icon-facebook.svg") center/24px no-repeat;
 }
+
 #facebook:hover {
 	background-image: url("../images/icon-facebook-hover.svg");
 }
+
 #twitter {
 	background: url("../images/icon-twitter.svg") center/24px no-repeat;
 }
+
 #twitter:hover {
 	background-image: url("../images/icon-twitter-hover.svg");
 }
+
 #pinterest {
 	background: url("../images/icon-pinterest.svg") center/24px no-repeat;
 }
+
 #pinterest:hover {
 	background-image: url("../images/icon-pinterest-hover.svg");
 }
+
 #instagram {
 	background: url("../images/icon-instagram.svg") center/24px no-repeat;
 }
+
 #instagram:hover {
 	background-image: url("../images/icon-instagram-hover.svg");
 }
+
 /*------------------- FOOTER LINKS -------------------*/
 #footer-links {
 	width: 100%;
 	height: 159px;
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 	margin-top: 48px;
 }
-#footer-links > div {
+
+#footer-links>div {
 	height: 159px;
 	width: 255px;
 	display: flex;
@@ -355,6 +421,7 @@ footer {
 	font: 700 13px/13px 'Karla';
 	letter-spacing: 1.5px;
 }
+
 .section-header {
 	margin-bottom: 20px;
 	color: hsl(273, 4%, 51%);
@@ -370,36 +437,45 @@ footer {
 #footer-links a {
 	color: hsl(256, 26%, 20%);
 }
+
 #footer-links a:hover {
 	text-decoration: underline;
 }
+
 #footer-links a:visited {
 	color: hsl(256, 26%, 20%);
 }
+
 /*############################################################################*/
 /*############################## MOBILE VERSION ##############################*/
 /*############################################################################*/
 @media screen and (max-width:480px) {
+
 	/*#################### NAV ####################*/
 	nav {
 		width: 100vw;
 		padding: 0px 25px;
 	}
-	nav > div {
+
+	nav>div {
 		height: 30px;
 	}
+
 	#nav-links {
 		display: none;
 	}
+
 	#nav-hamburger {
 		display: block;
 	}
+
 	/*#################### HEADER ####################*/
 	header {
 		width: 100vw;
 		height: 1125px;
 		background: linear-gradient(to bottom, hsl(256, 26%, 20%) 950px, white 950px);
 	}
+
 	#header-intro {
 		padding: 550px 30px 0px 30px;
 		background-image: url("../images/bg-pattern-intro-left-mobile.svg"), url("../images/bg-pattern-intro-right-mobile.svg"), url("../images/image-intro-mobile.jpg");
@@ -409,33 +485,42 @@ footer {
 		align-items: center;
 		text-align: center;
 	}
+
 	#intro-topLine {
 		display: none;
 	}
+
 	h1 {
 		width: 350px;
 		font-size: 48px;
 		line-height: 1;
 		margin: 0px;
 	}
+
 	#intro-text {
 		width: 340px;
+		height: 130px;
 		font-size: 17px;
 		margin: 15px 0px 10px 0px;
 	}
+
 	#intro-viewPlansBt {
 		width: 145px;
 		color: white;
 		border-color: white;
+		margin: 40px 0px 0px 0px;
 	}
+
 	#intro-viewPlansBt:hover {
 		color: hsl(256, 26%, 20%);
 		background-color: white;
 	}
+
 	#intro-bottomLine {
 		border-top-color: #b1a3b4;
 		margin-top: 230px;
 	}
+
 	/*#################### MAIN ####################*/
 	main {
 		width: 100vw;
@@ -444,10 +529,13 @@ footer {
 		align-items: center;
 		text-align: center;
 	}
+
 	#main-header {
 		width: 350px;
 		font-size: 50px;
+		margin-top: 40px;
 	}
+
 	/*------------------- FEATURES -------------------*/
 	#main-features {
 		height: 1005px;
@@ -457,15 +545,18 @@ footer {
 		justify-content: space-around;
 		margin-top: 60px;
 	}
-	#main-features > div {
+
+	#main-features>div {
 		width: 325px;
 		height: 255px;
 		text-align: center;
 		padding: 0px;
 	}
+
 	.features-pic {
 		background-position: center;
 	}
+
 	/*------------------- FIND OUT -------------------*/
 	#main-findOut {
 		height: 340px;
@@ -477,21 +568,24 @@ footer {
 		margin-top: 75px;
 		background: hsl(256, 26%, 20%) url("../images/bg-pattern-how-we-work-mobile.svg") 100% 0%/176px no-repeat;
 	}
+
 	#findOut-header {
 		width: 240px;
 		margin: 0px 0px 40px 0px;
 		font-size: 38px;
 	}
+
 	/*#################### FOOTER ####################*/
 	footer {
 		width: 100vw;
-		height: 1025px;
+		height:1300px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		padding: 0px 20px;
 		background: hsl(0, 0%, 98%) url("../images/bg-pattern-footer-mobile.svg") top/374px no-repeat;
 	}
+
 	/*------------------- FOOTER TOP -------------------*/
 	#footer-top {
 		width: 330px;
@@ -499,16 +593,22 @@ footer {
 		flex-direction: column;
 		align-items: center;
 		padding: 85px 0px 40px 0px;
+
 	}
+
 	#footer-logo {
 		height: 18px;
+		margin-bottom: 32px;
 	}
+
 	#footer-media {
 		height: 24px;
 	}
+
 	#footer-media div {
 		margin: 0px 10px;
 	}
+
 	/*------------------- FOOTER LINKS -------------------*/
 	#footer-links {
 		width: 100%;
@@ -517,14 +617,20 @@ footer {
 		align-items: center;
 		margin-top: 40px;
 	}
-	#footer-links > div {
+
+	#footer-links>div {
 		height: auto;
 		width: 330px;
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-		margin-bottom: 15px;
+		margin-bottom: 40px;
 	}
+
+	.section-header{
+		margin-bottom: 40px;
+	}
+
 	.section-link {
 		height: 30px;
 	}
