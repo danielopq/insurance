@@ -1,24 +1,20 @@
 /**
- * @fileoverview Contains de main actions do hide or display the main menu while the mobile version is running.
+ * @fileoverview Contains the main actions to hide or display the main menu while the mobile version is active.
  * @author Daniel Martinez Duque
  * @date 2024-08-04
  */
 
-(()=>{
-	document.getElementById("nav-hamburger").addEventListener('click',showMobileMenu,false);
-})()
-
 /**
- * Display or hide the menu and swap the icon button depending on whether the menu is deployed or not.
+ * Toggles the mobile menu's visibility and swaps the icon on the menu button based on whether the menu is currently displayed.
  */
-function showMobileMenu(){
-	if(document.getElementById("nav-mobile").style.display == "none"){
-		document.getElementById("nav-hamburger").style.backgroundImage = "url('images/icon-close.svg')";
-		document.getElementById("nav-mobile").style.display = "flex";
-		document.body.style.overflow = "hidden";
-	}else{
-		document.getElementById("nav-hamburger").style.backgroundImage = "url('images/icon-hamburger.svg')";
-		document.getElementById("nav-mobile").style.display = "none";
-		document.body.style.overflow = "auto";
-	}
+const showMobileMenu = () => {
+	const displayed = document.getElementById("nav-mobile").style.display == "flex";
+
+	document.getElementById("nav-hamburger").style.backgroundImage = displayed ? "url('images/icon-hamburger.svg')" : "url('images/icon-close.svg')";
+	document.getElementById("nav-mobile").style.display = displayed ? "none" : "flex";
+	document.body.style.overflow = displayed ? "auto" : "hidden";
 }
+
+(() => {
+	document.getElementById("nav-hamburger").addEventListener('click', showMobileMenu, false);
+})()

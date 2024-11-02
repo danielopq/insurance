@@ -40,9 +40,12 @@ a {
 	text-decoration: none;
 }
 
-a:hover,
-input[type="button"]:hover {
-	cursor: pointer;
+@media(hover:hover) {
+
+	a:hover,
+	input[type="button"]:hover {
+		cursor: pointer;
+	}
 }
 
 .square-button {
@@ -92,8 +95,10 @@ a[class="nav-link"] {
 	color: hsl(273, 4%, 51%);
 }
 
-a[class="nav-link"]:hover {
-	color: hsl(256, 26%, 20%);
+@media(hover:hover) {
+	a[class="nav-link"]:hover {
+		color: hsl(256, 26%, 20%);
+	}
 }
 
 a:visited[class="nav-link"] {
@@ -108,9 +113,11 @@ a:visited[class="nav-link"] {
 	margin-left: 33px;
 }
 
-#nav-viewPlansBt:hover {
-	color: white;
-	background-color: hsl(256, 26%, 20%);
+@media(hover:hover) {
+	#nav-viewPlansBt:hover {
+		color: white;
+		background-color: hsl(256, 26%, 20%);
+	}
 }
 
 #nav-hamburger {
@@ -124,8 +131,8 @@ a:visited[class="nav-link"] {
 }
 
 #nav-mobile {
-	width: 100vw;
-	height: calc(100vh - 80px);
+	width: calc(100vw + 1px);
+	height: calc(100vh - 70px);
 	position: absolute;
 	z-index: 3;
 	flex-direction: column;
@@ -144,8 +151,10 @@ a[class="nav-link-mb"] {
 	color: white;
 }
 
-a[class="nav-link-mb"]:hover {
-	color: hsla(0, 100%, 100%, 0.5);
+@media(hover:hover) {
+	a[class="nav-link-mb"]:hover {
+		color: hsla(0, 100%, 100%, 0.5);
+	}
 }
 
 a:visited[class="nav-link-mb"] {
@@ -160,9 +169,11 @@ a:visited[class="nav-link-mb"] {
 	border-color: white;
 }
 
-#nav-viewPlansBt-mb:hover {
-	color: hsl(256, 26%, 20%);
-	background-color: white;
+@media(hover:hover) {
+	#nav-viewPlansBt-mb:hover {
+		color: hsl(256, 26%, 20%);
+		background-color: white;
+	}
 }
 
 /*################################### HEADER ###################################*/
@@ -216,9 +227,11 @@ h1 {
 	border-color: white;
 }
 
-#intro-viewPlansBt:hover {
-	color: hsl(256, 26%, 20%);
-	background-color: white;
+@media(hover:hover) {
+	#intro-viewPlansBt:hover {
+		color: hsl(256, 26%, 20%);
+		background-color: white;
+	}
 }
 
 #intro-bottomLine {
@@ -326,9 +339,11 @@ main {
 	border-color: white;
 }
 
-#findOut-howWeWorkBt:hover {
-	color: hsl(256, 26%, 20%);
-	background-color: white;
+@media(hover:hover) {
+	#findOut-howWeWorkBt:hover {
+		color: hsl(256, 26%, 20%);
+		background-color: white;
+	}
 }
 
 /*################################### FOOTER ###################################*/
@@ -374,32 +389,35 @@ footer {
 	background: url("../images/icon-facebook.svg") center/24px no-repeat;
 }
 
-#facebook:hover {
-	background-image: url("../images/icon-facebook-hover.svg");
-}
-
 #twitter {
 	background: url("../images/icon-twitter.svg") center/24px no-repeat;
-}
-
-#twitter:hover {
-	background-image: url("../images/icon-twitter-hover.svg");
 }
 
 #pinterest {
 	background: url("../images/icon-pinterest.svg") center/24px no-repeat;
 }
 
-#pinterest:hover {
-	background-image: url("../images/icon-pinterest-hover.svg");
-}
-
 #instagram {
 	background: url("../images/icon-instagram.svg") center/24px no-repeat;
 }
 
-#instagram:hover {
-	background-image: url("../images/icon-instagram-hover.svg");
+@media(hover:hover) {
+
+	#facebook:hover {
+		background-image: url("../images/icon-facebook-hover.svg");
+	}
+
+	#twitter:hover {
+		background-image: url("../images/icon-twitter-hover.svg");
+	}
+
+	#pinterest:hover {
+		background-image: url("../images/icon-pinterest-hover.svg");
+	}
+
+	#instagram:hover {
+		background-image: url("../images/icon-instagram-hover.svg");
+	}
 }
 
 /*------------------- FOOTER LINKS -------------------*/
@@ -439,8 +457,10 @@ footer {
 	color: hsl(256, 26%, 20%);
 }
 
-#footer-links a:hover {
-	text-decoration: underline;
+@media(hover:hover) {
+	#footer-links a:hover {
+		text-decoration: underline;
+	}
 }
 
 #footer-links a:visited {
@@ -512,17 +532,13 @@ footer {
 		margin: 40px 0px 0px 0px;
 	}
 
-	#intro-viewPlansBt:hover {
-		color: hsl(256, 26%, 20%);
-		background-color: white;
-	}
-
 	#intro-bottomLine {
 		border-top-color: #b1a3b4;
 		margin-top: 230px;
 	}
 
 	/*#################### MAIN ####################*/
+	
 	main {
 		width: 100vw;
 		height: 1690px;
@@ -560,7 +576,7 @@ footer {
 
 	/*------------------- FIND OUT -------------------*/
 	#main-findOut {
-		height: 340px;
+		height: 344px;
 		width: 330px;
 		flex-direction: column;
 		align-items: center;
@@ -572,14 +588,15 @@ footer {
 
 	#findOut-header {
 		width: 240px;
+		height: auto;
+		font: 400 40px/40px 'DMSerifDisplay';
 		margin: 0px 0px 40px 0px;
-		font-size: 38px;
 	}
 
 	/*#################### FOOTER ####################*/
 	footer {
 		width: 100vw;
-		height:1300px;
+		height: 1300px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -628,7 +645,7 @@ footer {
 		margin-bottom: 40px;
 	}
 
-	.section-header{
+	.section-header {
 		margin-bottom: 40px;
 	}
 
