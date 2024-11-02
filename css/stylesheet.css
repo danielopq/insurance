@@ -298,7 +298,7 @@ main {
 	background-image: url("../images/icon-people-first.svg");
 }
 
-#main-features h3 {
+#main-features h2 {
 	font: 400 28px/28px 'DMSerifDisplay';
 	color: hsl(270, 9%, 17%);
 	margin: 35px 0px 16px 0px;
